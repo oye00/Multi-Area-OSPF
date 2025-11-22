@@ -1,4 +1,4 @@
-📋 ## Project Overview
+# Project Overview
 
 This project demonstrates the configuration and simulation of a multi-area OSPF (Open Shortest Path First) network using Cisco Packet Tracer.
 The goal is to design a hierarchical OSPF topology that improves routing scalability, reduces overhead, and simulates a real-world enterprise or ISP network structure.
@@ -7,9 +7,9 @@ The topology consists of 7 routers organized across 3 OSPF areas, with one route
 
 <img width="1407" height="726" alt="network topology" src="https://github.com/user-attachments/assets/25e5ae2f-3e06-4822-9f9e-63da9a360c81" />
 
-🧭 Network Topology Overview
+Network Topology Overview
 
-Areas:
+### Areas:
 
 Area 0 (Backbone): Central routing core; connects all other areas.
 
@@ -17,7 +17,7 @@ Area 1: Handles local routing for a subset of internal networks (branch 1).
 
 Area 2: Handles local routing for another subset (branch 2).
 
-Router Roles:
+### Router Roles:
 
 ABR (Area Border Router):
 Routers that connect the backbone (Area 0) to another OSPF area.
@@ -37,8 +37,9 @@ Internal Routers:
 Routers fully contained within one OSPF area (e.g., Router4, Router5, Router6, Router7).
 
 
-⚙️ Implementation Steps
-1️⃣ IP Addressing and Interface Configuration
+# Implementation Steps
+
+## IP Addressing and Interface Configuration
 
 Assign IP addresses according to the topology diagram (network topology.png).
 Here’s an example for Router2 (ABR1):
@@ -56,7 +57,7 @@ no shutdown
 Repeat for each router using your IP plan.
 
 
-2️⃣ Default Route Between ASBR and ISP
+## Default Route Between ASBR and ISP
 
 On ISP router:
 ```
@@ -75,7 +76,7 @@ network 10.10.10.4 0.0.0.3 area 0
 
 ============================================================================================================================================================================================================================================
 
-3️⃣Configure OSPF Routing
+## Configure OSPF Routing
 
 Enable OSPF on all routers and assign networks to their respective areas.
 
@@ -97,7 +98,7 @@ Repeat for all the other routers participating in OSPF
 
 ============================================================================================================================================================================================================================================
 
-4️⃣ Verify OSPF Adjacencies
+## Verify OSPF Adjacencies
 
 Use the following commands on each router:
 
@@ -127,7 +128,7 @@ Output for router 4 is shown below
 
 ============================================================================================================================================================================================================================================
 
-5️⃣ Test Network Connectivity
+## Test Network Connectivity
 
 Use ping command
 
