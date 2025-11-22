@@ -43,13 +43,13 @@ Routers fully contained within one OSPF area (e.g., Router4, Router5, Router6, R
 Assign IP addresses according to the topology diagram (network topology.png).
 Here’s an example for Router2 (ABR1):
 
-hostname Router2
+'''hostname Router2
 interface g0/0
 ip address 10.10.10.2 255.255.255.252
 no shutdown
 interface g0/1
 ip address 192.168.1.1 255.255.255.0
-no shutdown
+no shutdown'''
 
 Repeat for each router using your IP plan.
 
