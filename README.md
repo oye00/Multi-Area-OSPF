@@ -104,20 +104,20 @@ Use the following commands on each router:
 ```
 show ip ospf neighbor
 ```
-This displays all OSPF neighbors of a router, their adjacency states and the interfaces through which they are reachable.
+This displays all OSPF neighbors of a router, their adjacency states and the interfaces through which they are reachable. 
 Output for router 1(ASBR) below
 <img width="981" height="111" alt="show IP ospf neighbor (router 1_ASBR)" src="https://github.com/user-attachments/assets/3ecb92af-3f4f-4892-bc2b-5c2b7aa8c467" />
 
 ```
 show ip ospf interface brief
 ```
-This displays a summary of all interfaces running OSPF on the router
+This displays a summary of all interfaces running OSPF on the router. 
 Output for router 2 is shown below 
 <img width="981" height="118" alt="ospf brief interface_router_2" src="https://github.com/user-attachments/assets/06f981f9-1ca4-47dd-83d0-c4bb1284afe7" />
 ```
 show ip route ospf
 ```
-This displays all routes in the router's routing table that were learned via OSPF
+This displays all routes in the router's routing table that were learned via OSPF. 
 Output for router 4 is shown below
 <img width="981" height="173" alt="show ip route OSPF_router_4" src="https://github.com/user-attachments/assets/d1ba97fb-a465-4091-b5a4-1f5ea8d1cf1c" />
 
@@ -129,7 +129,7 @@ Output for router 4 is shown below
 
 5️⃣ Test Network Connectivity
 
-Use ping 
+Use ping command
 
 ```
 Ping 192.168.2.2
