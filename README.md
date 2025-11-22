@@ -74,8 +74,6 @@ network 10.10.10.4 0.0.0.3 area 0
 ```
 ➡️ This static default route tells the ASBR that any unknown destination should be forwarded to the ISP router.
 
-============================================================================================================================================================================================================================================
-
 ## Configure OSPF Routing
 
 Enable OSPF on all routers and assign networks to their respective areas.
@@ -95,8 +93,6 @@ router ospf 1
  network 192.168.50.0 0.0.0.255 area 2
 ```
 Repeat for all the other routers participating in OSPF
-
-============================================================================================================================================================================================================================================
 
 ## Verify OSPF Adjacencies
 
@@ -126,8 +122,6 @@ Output for router 4 is shown below
 ✅ All routers within the same area should form neighbor adjacencies.
 ✅ Routes from all areas should appear in each router’s routing table.
 
-============================================================================================================================================================================================================================================
-
 ## Test Network Connectivity
 
 Use ping command
@@ -140,10 +134,7 @@ Output Confirming Connectivity of router 7 in area 2 with router 5 in area 1
 <img width="1102" height="111" alt="ping_router_5_from_router_7" src="https://github.com/user-attachments/assets/47089084-c67f-454a-9953-9ee94b43ef49" />
 
 
-
 You should have full connectivity between hosts in all areas (Area 1 ↔ Area 2).
-
-============================================================================================================================================================================================================================================
 
 IP Address Summary Table
 
